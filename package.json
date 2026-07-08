@@ -1,6 +1,6 @@
 {
 	"name": "hover-highlight",
-	"version": "0.9.1",
+	"version": "0.9.2",
 	"description": "Obsidian plugin that adds a soft cursor glow effect to Canvas",
 	"main": "main.js",
 	"scripts": {
