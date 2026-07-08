@@ -1,0 +1,10 @@
+node_modules/
+main.js
+styles.css
+.DS_Store
+*.log
+*.swp
+*.swo
+.idea/
+.vscode/
+.env

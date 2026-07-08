@@ -1,0 +1,9 @@
+{
+	"id": "hover-highlight",
+	"name": "Hover Highlight",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Adds a soft cursor glow effect to Canvas, creating a subtle radial light that follows your mouse.",
+	"author": "raito1chi",
+	"isDesktopOnly": false
+}

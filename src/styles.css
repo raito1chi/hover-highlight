@@ -1,0 +1,25 @@
+svg.canvas-background {
+	visibility: hidden !important;
+}
+
+.hover-highlight-dots,
+.hover-highlight-dots-lit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: -1;
+	contain: layout style paint;
+	will-change: transform;
+	transform: translateZ(0);
+}
+
+.hover-highlight-dots {
+	opacity: 0.4;
+}
+
+.hover-highlight-dots-lit {
+	opacity: 0;
+}
