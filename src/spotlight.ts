@@ -124,11 +124,11 @@ export class SpotlightRenderer {
 		this.currentAlpha = 1 - Math.min(elapsed / fadeMs, 1);
 
 		if (this.currentAlpha > 0.01) {
-			this.litDotsEl.style.opacity = "1";
+			this.litDotsEl.classList.add("is-visible");
 			this.updateMask();
 		} else {
 			this.clearMask();
-			this.litDotsEl.style.opacity = "0";
+			this.litDotsEl.classList.remove("is-visible");
 		}
 
 		this.rafId = requestAnimationFrame(this.animate);
@@ -139,8 +139,8 @@ export class SpotlightRenderer {
 		this.currentX = this.wrapperEl.clientWidth / 2;
 		this.currentY = this.wrapperEl.clientHeight / 2;
 		this.lastMoveTime = performance.now();
-		this.baseDotsEl.style.display = "";
-		this.litDotsEl.style.display = "";
+		this.baseDotsEl.classList.remove("is-hidden");
+		this.litDotsEl.classList.remove("is-hidden");
 		this.rafId = requestAnimationFrame(this.animate);
 	}
 
@@ -150,8 +150,8 @@ export class SpotlightRenderer {
 			this.rafId = null;
 		}
 		this.clearMask();
-		this.baseDotsEl.style.display = "none";
-		this.litDotsEl.style.display = "none";
+		this.baseDotsEl.classList.add("is-hidden");
+		this.litDotsEl.classList.add("is-hidden");
 	}
 
 	applySettings(): void {

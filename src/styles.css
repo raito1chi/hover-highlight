@@ -23,3 +23,12 @@ svg.canvas-background {
 .hover-highlight-dots-lit {
 	opacity: 0;
 }
+
+.hover-highlight-dots-lit.is-visible {
+	opacity: 1;
+}
+
+.hover-highlight-dots.is-hidden,
+.hover-highlight-dots-lit.is-hidden {
+	display: none;
+}
